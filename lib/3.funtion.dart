@@ -1,9 +1,40 @@
 void main(){
 
  // print(add(1));
- //  print(add1(1));
-  print(str('sss'));
+ //  print(add2(list:[2,3,4]));
+  // print(str('sss'));
+  // printFunc();
+  // printFunc1('mmp');
+  // var a =test(['1','2','3','4'],test1);
+  // print(a);
+  // var  demo =  ['a','b','c','c'];
+  // demo.forEach((item)=>print(item));
+  print(makeAddFunc(999)(1));
+  //
+  //  MyFunc addFun = add(11, 22);
+  //  print(addFun);
+  //  MyFunc  divideFun = divide(33, 3);
+  //  print(divideFun);
+
 }
+
+
+// 闭包
+Function makeAddFunc(int a){
+  a++;
+  return (y)=>a+y;
+}
+
+// 函数别名
+
+// typedef MyFunc = Function(int a,int b);
+//
+//  add(int a,int b){
+//     print(a+b);
+// }
+//  divide(int a,int b){
+//    print(a/b);
+// }
 
 // add(){
 //    print('打印出来');
@@ -26,11 +57,35 @@ void main(){
 // int add (int a,int b) => a+b;
 
 //可选参数
-String  str(String a,{String?b='',String?c=''}){
-    return '${a}${b}${c}';
-}
+
+// add2({List list = const [1,2,3,4]}){
+//   return list;
+// }
 
 //可选位置参数
 // int add1(int a, {int b=0,int c=0}){
 //   return a+b+c;
 // }
+
+
+// var printFunc =  ()=> print('dsads');
+
+
+// var printFunc1 =  (name)=> print(name);
+
+// 匿名函数作为参数
+
+
+// List test(List list,String func(str)){
+//   for(var i=0;i<list.length;i++){
+//         list[i] = func(list[i]);
+//   }
+//   return list;
+// }
+//
+// String test1(str){
+//   return str*2;
+// }
+//
+
+
