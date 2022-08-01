@@ -7,7 +7,7 @@ void main(){
    // var p =  Person('yh');
    // print(p.age);
 
-  const A = Animal(120.58, 165.5);
+  const A = Animal(weight:165.5, height: 18.5);
   print(A.height);
   print(A.weight);
   // Dog dog = Dog.initial();
@@ -58,7 +58,7 @@ class  Animal{
   final double  weight;
   final double height;
   //使用const进行修饰
-  const Animal(this.weight,this.height);
+  const Animal({required this.weight,required this.height});
 }
 
 
